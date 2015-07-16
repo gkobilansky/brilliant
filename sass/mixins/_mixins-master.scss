@@ -21,3 +21,12 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Hide text mixin
+@mixin hide-text{
+    overflow:hidden;
+    text-indent:-9000px;
+    display:block;
+}
+
+

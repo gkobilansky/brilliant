@@ -1,5 +1,6 @@
 p {
 	margin-bottom: 1.5em;
+	text-align: center;
 }
 
 dfn, cite, em, i {
@@ -7,8 +8,12 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: $breathing-room;
+	border-left:.2rem solid $color__border-input;
+	padding-left: 1rem;
+	font-style: italic;
 }
+
 
 address {
 	margin: 0 0 1.5em;

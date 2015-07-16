@@ -1,3 +1,11 @@
+.site-branding {
+	margin: $breathing-room;
+}
+
+.site-content {
+	margin: $breathing-room;
+}
+
 .content-area {
 	float: right;
 	margin: 0 0 0 (-$size__site-sidebar);
@@ -12,9 +20,18 @@
 	float: left;
 	overflow: hidden;
 	width: $size__site-sidebar;
+	margin: 0 0 0 0;
 }
 
 .site-footer {
 	clear: both;
 	width: $size__site-main;
+	overflow: visible;
+	padding: $breathing-room;
 }
+
+
+
+
+
+

@@ -1,5 +1,10 @@
-$font__main: sans-serif;
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700|Lato:100,400);
+
+$font__main: Cardo, serif;
+$font__head: Lato, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__spacing: 1rem;

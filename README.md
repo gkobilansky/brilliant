@@ -1,45 +1,64 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
-
-_s
+brilliant
 ===
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This is a Wordpress Theme I'm working on built on to of `_s`, or `underscores`, if you like. 
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+If you're not familiar, `_s` is a theme meant for hacking, with the state goal of " "try turning me into the next, most awesome, WordPress theme out there". 
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+I SASSified my `_s` because ... well because it's better and I wanted to finally learn how to work with SASS. 
 
-Getting Started
+Project Description
+------
+
+I started this project as a portfolio theme for my fiance's photography. Luckily enough, she didn't give me much direction or a deadline, so I took it as an opportunity to play around with some new technology and workflows.
+
+You can check out my fiance's site to get an idea of what the theme looks like in action.
+
+How I'm working.
+----
+
+## Vagrant
+
+One of the things I struggle with the most when getting started on a new development project is figuring out my workflow. I've been trying to simplify it and optimize it for a while. Both for wordpress development and development in general.
+
+While working on wealthbot.io, I learned from our technical lead about [Vagrant](http://vagrantup.com) and man is it awesome. Trying to get wealthbot.io to run on OSX using the traditional approach: a combination of MAMP, plus MongoDB and making sure my PHP was up to date and my hosts file was setup correctly, etc, etc was a nightmare.
+
+Once I downloaded Vagrant and Virtual Box though, it was a breeze. `vagrant up` and we're off to the races.
+
+I was eternally unhappy with my Wordpress environment, so I began to wonder if there was a Vagrant solution. Lo and behold, VVV.
+
+As long as you have enough space, and have Vargrant + Virtual Box installed, you can download VVV, run `vagrant up` and a brand new wordpress environment is running on a virtual server inside your machine!
+
+## Codekit
+
+As I mentioned, I'm using a SASS version of `_s` for this project, which means I need a way of "watching" and compiling in CSS. 
+
+Not everything was easy-breezy thought, I had a hell of a time trying to get ?Grunt? to work with VVV. Eventually I decided that was going to be a challenge for another project. Codekit to the rescue. Pop my theme folder inCodekit, take a guess at a few settings and BAM, automatic SASS AND automatic browser reloading! On multiple devices! 
+
+[insert picture on 3 devices]
+
+More About How This Theme Was Built
+----
+
+OK, so I've pushed, prodded and hacked away at this theme and I'm really digging how Vicky's site came out. It's simple, picture forward and (in my opinion) has just the right touch of animation to make for an interesting presentation. 
+
+About halfway through working on this project, I got the idea to share the theme, help others setup clean, simple Wordpress portfolio sites. And at the same time, hopefully, get some help cleaning up my SASS. 
+
+This area is where I think the theme needs the most help. I did what I could, but I feel like I didn't take full advantage of the syntax, variables and other awesome Sassy features.
+
+Still, it's possible and should be pretty easy, to customize this theme for your own portfolio. The structure section will explain how the theme works, so you know how to hack it.
+
+Structure 
+------
+
+Let's start from the top. First things first, I updated the variables in `sass/variables-site/` to use the colors and fonts that I thought would appeal to Vicky. 
+
+I ended up playing with these quite a bit and end up using mainly whites and grays based on the advice of this post. Then I added a splash of color with `$color__background-body: #99CCCC;` figuring between that and the color rich photography, there was no need to get fancy. 
+
+Next I started hacking away at header.php and style.scss to head the header looking the way I wanted to. 
+
+Getting your own starter theme
 ---------------
 
 If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
-
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
-
-OR
-
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
-
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
-
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
-
-Good luck!

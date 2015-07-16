@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: brilliant
 Theme URI: http://underscores.me/
 Author: Gene Kobilansky
@@ -105,3 +105,197 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+
+/*--------------------------------------------------------------
+# Styling
+--------------------------------------------------------------*/
+
+
+
+//Header
+.site-title{
+    background: url("inc/minilogo.png") no-repeat;
+    clear: none;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-right: 3rem;
+}
+
+.home-title{
+    background: url("inc/logo.png");
+    height:161px;
+    width:200px;
+}
+
+.home-background {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("inc/headerbg.png") no-repeat center center;
+  filter: grayscale(50%);
+  background-size: cover; 
+  min-height: 727px;
+} 
+
+.site-description {
+  letter-spacing: $font__spacing;
+  display: none;
+  padding: 0;
+  a{
+    text-decoration: none;
+    color: $color__text-hr;
+  }
+}
+
+.home-description {
+  display: block;
+}
+
+
+//Header Arrow
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:60em;
+  margin-left:-5em;
+  background:$color__background-footer;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: white transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color:$color__background-footer transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+
+//Footer
+
+ .site-info {
+  position: relative;
+  font-size: .5rem;
+
+
+      h2 {
+      text-align: right;
+      margin: 0;
+      }
+
+      a:visited {
+        color: $color__link;
+      }
+}
+
+
+//Home Page Title & Featured Images
+
+.featured {
+  
+  .entry-title {
+  position: absolute;
+  text-align: left;
+  top: auto;
+  text-transform: uppercase;
+  letter-spacing: $font__spacing;
+}
+
+img {
+  display: block;
+  transition: all .5s ease-in-out 500ms;
+}
+
+img:hover {
+  transform: scale(.69);
+  margin: auto;
+}
+}
+
+.entry-title a {
+  color: $color__link;
+  text-decoration: none;
+
+}
+
+// Post Title
+.entry-title { 
+  text-align: right;
+  position: relative;
+  top: -3.7rem;
+  z-index: -1;
+}
+
+// Gallery
+.tiled-gallery {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+
+
+
+
+
+
+
+
+

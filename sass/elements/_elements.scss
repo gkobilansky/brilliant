@@ -10,6 +10,7 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background-image: url("inc/bg.png");
 }
 
 blockquote, q {
@@ -26,6 +27,13 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
+}
+
+.site-footer {
+	background: $color__background-footer;
+	background-image: url("inc/footerbg.png");
+	background-size: cover;
+	background-position: top;
 }
 
 @import "lists";
