@@ -44,12 +44,5 @@
 			<h2 class="<?php if (is_front_page()) echo "home-description";?> site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></h2>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
-<?php if (is_front_page()) echo <<< EOT
-	<div><a class="arrow-wrap" href="#content"><span class="arrow"></span>
-<!--<span class="hint">scroll</span>-->
-</a>
-</div> 
-EOT;
-?>
 
 	<div id="content" class="site-content">
