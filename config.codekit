@@ -76,6 +76,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/inc\/custom-header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/custom-header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/inc\/customizer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -104,17 +113,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/footerbg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.25872e+07,
-		"inputAbbreviatedPath": "\/inc\/footerbg.jpg",
-		"outputAbbreviatedPath": "\/inc\/footerbg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/inc\/footerbg.png": {
 		"fileType": 32768,
@@ -268,6 +266,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/pics-for-readme\/sassify.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35794,
+		"inputAbbreviatedPath": "\/pics-for-readme\/sassify.png",
+		"outputAbbreviatedPath": "\/pics-for-readme\/sassify.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/README.html": {
 		"fileType": 8192,

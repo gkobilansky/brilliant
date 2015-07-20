@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h2>...And I Would Walk 500 More</h2></a>
+		<a href="<?php echo esc_url( home_url( '/contact-me' ) ); ?>" rel="home"><h2>...And I Would Walk 500 More</h2></a>
 		<div class="info-details">
 		<h5>Vicky Brigis Photography<br/><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'brilliant' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'brilliant' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
