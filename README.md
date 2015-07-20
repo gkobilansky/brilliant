@@ -41,7 +41,7 @@ Not everything was easy-breezy thought, I had a hell of a time trying to get [gu
 
 [insert picture on 3 devices]
 
-More About How This Theme Was Built
+How This Theme Was Built
 ----
 
 OK, so I've pushed, prodded and hacked away at this theme and I'm really digging how Vicky's site came out. It's simple, picture forward and (in my opinion) has just the right touch of animation to make for an interesting presentation. 
@@ -58,16 +58,19 @@ How it works
 The structure of the site goes something like this:
 
 **Header and menu**
+
 ![menu](/pics-for-readme/menu.png)
 
 ---------->>>>
 
 **Featured Image & Title**
+
 ![Featured Image](/pics-for-readme/featured-image-and-title.png)
 
 ---------->>>>
 
 **Post & Gallery**
+
 ![post](/pics-for-readme/post-and-gallery.png)
 
 The home page is an index of all blog posts. The menu is custom made and I set it to anchor link to the post title.
