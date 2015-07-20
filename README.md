@@ -1,18 +1,20 @@
 brilliant
 ===
 
-This is a Wordpress Theme I'm working on built on to of `_s`, or `underscores`, if you like. 
+This is a Wordpress Theme I'm working on built on to of `_s`, or [`underscores`](http://underscores.me/), if you like. 
 
 If you're not familiar, `_s` is a theme meant for hacking, with the state goal of " "try turning me into the next, most awesome, WordPress theme out there". 
 
-I SASSified my `_s` because ... well because it's better and I wanted to finally learn how to work with SASS. 
+I SASSified my `_s` because ... well because it's better and I wanted to finally learn how to work with SASS.
+
+[sassify _s](/pics-for-readme/sassify.png)
 
 Project Description
 ------
 
-I started this project as a portfolio theme for my fiance's photography. Luckily enough, she didn't give me much direction or a deadline, so I took it as an opportunity to play around with some new technology and workflows.
+I started this project as a portfolio theme for my fiancée's photography. Luckily enough, she didn't give me much direction or a deadline, so I took it as an opportunity to play around with some new technology and workflows.
 
-You can check out my fiance's site to get an idea of what the theme looks like in action.
+You can check out [my fiancée's site](http://vickybrigis.com) to get an idea of what the theme looks like in action.
 
 How I'm working.
 ----
