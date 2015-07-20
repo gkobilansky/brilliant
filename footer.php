@@ -17,7 +17,7 @@
 		<div class="info-details">
 		<h5>Vicky Brigis Photography<br/><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'brilliant' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'brilliant' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'brilliant' ), 'brilliant', '<a href="http://lancekey.com" rel="designer">Gene Kobilansky</a>' ); ?></h5>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'brilliant' ), 'brilliant', '<a href="https://github.com/gkobilansky/brilliant" rel="designer">Gene Kobilansky</a>' ); ?></h5>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
