@@ -52,25 +52,36 @@ This area is where I think the theme needs the most help. I did what I could, bu
 
 Still, it's possible and should be pretty easy, to customize this theme for your own portfolio. The structure section will explain how the theme works, so you know how to hack it.
 
-Structure 
+How it works 
 ------
 
 The structure of the site goes something like this:
 
-Header and menu
-
+**Header and menu**
 ![menu](/pics-for-readme/menu.png)
 
 ---------->>>>
 
-Featured Image & Title
+**Featured Image & Title**
 ![Featured Image](/pics-for-readme/featured-image-and-title.png)
 
 ---------->>>>
 
-Post & Gallery
-
+**Post & Gallery**
 ![post](/pics-for-readme/post-and-gallery.png)
+
+The home page is an index of all blog posts. The menu is custom made and I set it to anchor link to the post title.
+
+The images on the home page are the featured images for each new blog post you create.
+
+Each image links to a post, where we use Jetpack Tiled Galleries(http://jetpack.me/support/tiled-galleries/) to create a clean looking, interactive gallery. 
+
+This means you can have as many new "categories" on the home page as blog posts. Which could get pretty unwieldy if you're writing a lot of new posts. 
+
+That's now how I envision this theme being used. The idea for is less about content and more about making it easy to setup a few portfolio categories.
+
+How its built
+------------
 
 Let's start from the top. 
 
@@ -112,15 +123,32 @@ At first I styled the menu in style.scss, but decided to move everything to sass
 
 ### Home Page Scrolling
 
-I'm using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added [this code from CSS Tricks](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
+This theme is using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added [this code from CSS Tricks](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
 
 ### Featured Images
 
-The images on the home page are the featured images for each new blog post you create. You can have as many new "categories" on the home page as blog posts. This could get pretty stupid if you're writing a lot of new posts, but the idea for this theme was less about content and more about making it easy to setup a few portfolio categories.
+I copied index.php into home.php, but updated it to display both the featured image (`<?php the_post_thumbnail(); ?>`) and title of each post. Because I set `.content-area {width:100%;}`, the images cover my full browser but are larger than my screen's full height.
 
-So, each post is a new category, each menu link anchors to the post title and I use a [Jetpack Tiled Galleries](http://jetpack.me/support/tiled-galleries/) to present the actual photos.
+Using 
+```
+.featured{
+    img {
+      display: block;
+      transition: all .5s ease-in-out 500ms;
+    }
+
+    img:hover {
+        transform: scale(.69);
+        margin: auto;
+        }   
+}   
+```
+made for a simple animation that made me happy and let me see the full photograph.
+
+I added a post permalink to the featured images and decided to use the included Jetpack Tiled Galleries for my portfolio galleries. 
 
 ### Jetpack Tiled Galleries
+In this way, each post is a new portfolio category and I use a the galleries to present the actual photos.
 
 > With Tiled Galleries you can display your image galleries in three new styles: a rectangular mosaic, a square mosaic, and a circular grid. The rectangular and square tiled layouts also have hover-over captions to save space while making captions accessible.
 

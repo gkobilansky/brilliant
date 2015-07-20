@@ -28,12 +28,6 @@ get_header(); ?>
 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 	<?php the_post_thumbnail(); ?>
 	</a>
-<div>
-	<a class="arrow-wrap" href="#content">
-<span class="arrow"></span>
-<!--<span class="hint">scroll</span>-->
-</a>
-</div>
 
 <?php endif; ?>
 			</div>

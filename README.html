@@ -57,30 +57,34 @@
 
 <p>Still, it&#8217;s possible and should be pretty easy, to customize this theme for your own portfolio. The structure section will explain how the theme works, so you know how to hack it.</p>
 
-<h2 id="structure">Structure</h2>
+<h2 id="howitworks">How it works</h2>
 
 <p>The structure of the site goes something like this:</p>
 
-<p>Header and menu</p>
-
-<figure>
-<img src="/pics-for-readme/menu.png" alt="menu" />
-<figcaption>menu</figcaption>
-</figure>
+<p><strong>Header and menu</strong>
+<img src="/pics-for-readme/menu.png" alt="menu" /></p>
 
 <p>&#8212;&#8212;&#8212;-&gt;&gt;&gt;&gt;</p>
 
-<p>Featured Image &amp; Title
+<p><strong>Featured Image &amp; Title</strong>
 <img src="/pics-for-readme/featured-image-and-title.png" alt="Featured Image" /></p>
 
 <p>&#8212;&#8212;&#8212;-&gt;&gt;&gt;&gt;</p>
 
-<p>Post &amp; Gallery</p>
+<p><strong>Post &amp; Gallery</strong>
+<img src="/pics-for-readme/post-and-gallery.png" alt="post" /></p>
 
-<figure>
-<img src="/pics-for-readme/post-and-gallery.png" alt="post" />
-<figcaption>post</figcaption>
-</figure>
+<p>The home page is an index of all blog posts. The menu is custom made and I set it to anchor link to the post title.</p>
+
+<p>The images on the home page are the featured images for each new blog post you create.</p>
+
+<p>Each image links to a post, where we use Jetpack Tiled Galleries(http://jetpack.me/support/tiled-galleries/) to create a clean looking, interactive gallery. </p>
+
+<p>This means you can have as many new &#8220;categories&#8221; on the home page as blog posts. Which could get pretty unwieldy if you&#8217;re writing a lot of new posts. </p>
+
+<p>That&#8217;s now how I envision this theme being used. The idea for is less about content and more about making it easy to setup a few portfolio categories.</p>
+
+<h2 id="howitsbuilt">How its built</h2>
 
 <p>Let&#8217;s start from the top. </p>
 
@@ -125,15 +129,35 @@
 
 <h3 id="homepagescrolling">Home Page Scrolling</h3>
 
-<p>I&#8217;m using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added <a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">this code from CSS Tricks</a>.</p>
+<p>This theme is using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added <a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">this code from CSS Tricks</a>.</p>
 
 <h3 id="featuredimages">Featured Images</h3>
 
-<p>The images on the home page are the featured images for each new blog post you create. You can have as many new &#8220;categories&#8221; on the home page as blog posts. This could get pretty stupid if you&#8217;re writing a lot of new posts, but the idea for this theme was less about content and more about making it easy to setup a few portfolio categories.</p>
+<p>I copied index.php into home.php, but updated it to display both the featured image (<code>&lt;?php the_post_thumbnail(); ?&gt;</code>) and title of each post. Because I set <code>.content-area {width:100%;}</code>, the images cover my full browser but are larger than my screen&#8217;s full height.</p>
 
-<p>So, each post is a new category, each menu link anchors to the post title and I use a <a href="http://jetpack.me/support/tiled-galleries/">Jetpack Tiled Galleries</a> to present the actual photos.</p>
+<p>Using
+```
+.featured{
+ img {
+ display: block;
+ transition: all .5s ease-in-out 500ms;
+ }</p>
+
+<pre><code>img:hover {
+    transform: scale(.69);
+    margin: auto;
+    }   
+</code></pre>
+
+<p>}<br/>
+```
+made for a simple animation that made me happy and let me see the full photograph.</p>
+
+<p>I added a post permalink to the featured images and decided to use the included Jetpack Tiled Galleries for my portfolio galleries. </p>
 
 <h3 id="jetpacktiledgalleries">Jetpack Tiled Galleries</h3>
+
+<p>In this way, each post is a new portfolio category and I use a the galleries to present the actual photos.</p>
 
 <blockquote>
 <p>With Tiled Galleries you can display your image galleries in three new styles: a rectangular mosaic, a square mosaic, and a circular grid. The rectangular and square tiled layouts also have hover-over captions to save space while making captions accessible.</p>
