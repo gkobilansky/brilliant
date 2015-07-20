@@ -97,8 +97,6 @@ At first I styled the menu in style.scss, but decided to move everything to sass
 
 I'm using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added [this code from CSS Tricks](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
 
-Finally, I decided the menu was nice, but I wanted something a bit more obvious to get people to scroll and added [this Scroll Indicator](http://codepen.io/robooneus/pen/Aclqr/) as well.
-
 ### Featured Images
 
 The images on the home page are the featured images for each new blog post you create. You can have as many new "categories" on the home page as blog posts. This could get pretty stupid if you're writing a lot of new posts, but the idea for this theme was less about content and more about making it easy to setup a few portfolio categories.
