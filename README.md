@@ -3,7 +3,7 @@ brilliant
 
 This is a Wordpress Theme I'm working on built on to of `_s`, or [`underscores`](http://underscores.me/), if you like. 
 
-If you're not familiar, `_s` is a theme meant for hacking, with the state goal of " "try turning me into the next, most awesome, WordPress theme out there". 
+If you're not familiar, `_s` is a theme meant for hacking, with the stated goal of try turning me into the next, most awesome, WordPress theme out there". 
 
 I SASSified my `_s` because ... well because it's better and I wanted to finally learn how to work with SASS.
 
