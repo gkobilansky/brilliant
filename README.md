@@ -77,7 +77,7 @@ The home page is an index of all blog posts. The menu is custom made and I set i
 
 The images on the home page are the featured images for each new blog post you create.
 
-Each image links to a post, where we use Jetpack Tiled Galleries(http://jetpack.me/support/tiled-galleries/) to create a clean looking, interactive gallery. 
+Each image links to a post, where we use [Jetpack Tiled Galleries](http://jetpack.me/support/tiled-galleries/) to create a clean looking, interactive gallery. 
 
 This means you can have as many new "categories" on the home page as blog posts. Which could get pretty unwieldy if you're writing a lot of new posts. 
 
