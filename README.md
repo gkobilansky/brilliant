@@ -7,7 +7,7 @@ If you're not familiar, `_s` is a theme meant for hacking, with the state goal o
 
 I SASSified my `_s` because ... well because it's better and I wanted to finally learn how to work with SASS.
 
-[sassify _s](/pics-for-readme/sassify.png)
+![sassify _s](/pics-for-readme/sassify.png)
 
 Project Description
 ------
