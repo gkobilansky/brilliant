@@ -19,7 +19,7 @@ You can check out my fiancée's site [Vicky Brigis Photography](http://vickybrig
 How I'm working.
 ----
 
-## Vagrant
+### Vagrant
 
 One of the things I struggle with the most when getting started on a new development project is figuring out my workflow. I've been trying to simplify it and optimize it for a while. Both for wordpress development and development in general.
 
@@ -33,7 +33,7 @@ I've been eternally unhappy with my Wordpress environment, so I began to wonder 
 
 As long as you have enough space, and have Vargrant + Virtual Box installed, you can download VVV, run `vagrant up` and a brand new wordpress environment is running on a virtual server inside your machine!
 
-## Codekit
+### Codekit
 
 As I mentioned, I'm using a SASS version of `_s` for this project, which means I need a way of "watching" and compiling my SASS to CSS. 
 
@@ -57,12 +57,12 @@ Structure
 
 Let's start from the top. 
 
-## Variables
+### Variables
 First things first, I updated the variables in `sass/variables-site/` to use the colors and fonts that I thought would appeal to Vicky. 
 
 I played with these quite a bit at first, but end up using mainly whites and grays based on the advice of [this post](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda). Then I added a splash of color with `$color__background-body: #99CCCC;` figuring between that and the color rich photography, there was no need to get fancy. 
 
-## Header and Footer
+### Header and Footer
 
 Next, I started hacking away at header.php and style.scss to get the header looking the way I wanted to.
 
@@ -81,31 +81,31 @@ By the way, header, footer, background and logo images (there's right, I have 2 
 * bg.png
 * logo.png and minilogo.png
 
-## Layout
+### Layout
 
 I don't like [sidebars](http://blog.videofruit.com/website-sidebar/), both from a design perspective and from a conversion perspective. Not that this theme is built for conversions or anything.
 
 So, I created brilliant/sass/layout/_content-nosidebar.scss to get *really* content focused.
 
-## Home Menu
+### Home Menu
 
 The idea here again, was to give it a little bit of style, animation and keep it clean.
 
 At first I styled the menu in style.scss, but decided to move everything to sass/navigation/_menus.scss. 
 
-## Home Page Scrolling
+### Home Page Scrolling
 
 I'm using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added [this code from CSS Tricks](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
 
 Finally, I decided the menu was nice, but I wanted something a bit more obvious to get people to scroll and added [this Scroll Indicator](http://codepen.io/robooneus/pen/Aclqr/) as well.
 
-## Featured Images
+### Featured Images
 
 The images on the home page are the featured images for each new blog post you create. You can have as many new "categories" on the home page as blog posts. This could get pretty stupid if you're writing a lot of new posts, but the idea for this theme was less about content and more about making it easy to setup a few portfolio categories.
 
 So, each post is a new category, each menu link anchors to the post title and I use a [Jetpack Tiled Galleries](http://jetpack.me/support/tiled-galleries/) to present the actual photos.
 
-## Jetpack Tiled Galleries
+### Jetpack Tiled Galleries
 
 > With Tiled Galleries you can display your image galleries in three new styles: a rectangular mosaic, a square mosaic, and a circular grid. The rectangular and square tiled layouts also have hover-over captions to save space while making captions accessible.
 
