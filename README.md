@@ -55,6 +55,23 @@ Still, it's possible and should be pretty easy, to customize this theme for your
 Structure 
 ------
 
+The structure of the site goes something like this:
+
+Header and menu
+
+![menu](/pics-for-readme/menu.png)
+
+---------->>>>
+
+Featured Image & Title
+![Featured Image](/pics-for-readme/featured-image-and-title.png)
+
+---------->>>>
+
+Post & Gallery
+
+![post](/pics-for-readme/post-and-gallery.png)
+
 Let's start from the top. 
 
 ### Variables

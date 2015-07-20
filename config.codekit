@@ -267,6 +267,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pics-for-readme\/featured-image-and-title.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.2936e+06,
+		"inputAbbreviatedPath": "\/pics-for-readme\/featured-image-and-title.png",
+		"outputAbbreviatedPath": "\/pics-for-readme\/featured-image-and-title.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pics-for-readme\/menu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20753,
+		"inputAbbreviatedPath": "\/pics-for-readme\/menu.png",
+		"outputAbbreviatedPath": "\/pics-for-readme\/menu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pics-for-readme\/post-and-gallery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.20839e+06,
+		"inputAbbreviatedPath": "\/pics-for-readme\/post-and-gallery.png",
+		"outputAbbreviatedPath": "\/pics-for-readme\/post-and-gallery.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/pics-for-readme\/sassify.png": {
 		"fileType": 32768,
 		"ignore": 0,

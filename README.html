@@ -6,37 +6,44 @@
 <body>
 <h1 id="brilliant">brilliant</h1>
 
-<p>This is a Wordpress Theme I&#8217;m working on built on to of <code>_s</code>, or <code>underscores</code>, if you like. </p>
+<p>This is a Wordpress Theme I&#8217;m working on built on to of <code>_s</code>, or <a href="http://underscores.me/"><code>underscores</code></a>, if you like. </p>
 
 <p>If you&#8217;re not familiar, <code>_s</code> is a theme meant for hacking, with the state goal of &#8220; &#8221;try turning me into the next, most awesome, WordPress theme out there&quot;. </p>
 
-<p>I SASSified my <code>_s</code> because &#8230; well because it&#8217;s better and I wanted to finally learn how to work with SASS. </p>
+<p>I SASSified my <code>_s</code> because &#8230; well because it&#8217;s better and I wanted to finally learn how to work with SASS.</p>
+
+<figure>
+<img src="/pics-for-readme/sassify.png" alt="sassify _s" />
+<figcaption>sassify _s</figcaption>
+</figure>
 
 <h2 id="projectdescription">Project Description</h2>
 
-<p>I started this project as a portfolio theme for my fiance&#8217;s photography. Luckily enough, she didn&#8217;t give me much direction or a deadline, so I took it as an opportunity to play around with some new technology and workflows.</p>
+<p>I started this project as a portfolio theme for my fiancée&#8217;s photography. Luckily enough, she didn&#8217;t give me much direction or a deadline, so I took it as an opportunity to play around with some new technology and workflows.</p>
 
-<p>You can check out my fiance&#8217;s site to get an idea of what the theme looks like in action.</p>
+<p>You can check out my fiancée&#8217;s site <a href="http://vickybrigis.com">Vicky Brigis Photography</a> to get an idea of what the theme looks like in action.</p>
 
 <h2 id="howimworking.">How I&#8217;m working.</h2>
 
-<h2 id="vagrant">Vagrant</h2>
+<h3 id="vagrant">Vagrant</h3>
 
 <p>One of the things I struggle with the most when getting started on a new development project is figuring out my workflow. I&#8217;ve been trying to simplify it and optimize it for a while. Both for wordpress development and development in general.</p>
 
-<p>While working on wealthbot.io, I learned from our technical lead about <a href="http://vagrantup.com">Vagrant</a> and man is it awesome. Trying to get wealthbot.io to run on OSX using the traditional approach: a combination of MAMP, plus MongoDB and making sure my PHP was up to date and my hosts file was setup correctly, etc, etc was a nightmare.</p>
+<p>While working on <a href="https://github.com/wealthbot-io/wealthbot">wealthbot.io</a>, I learned from <a href="https://github.com/vlad-ko">our technical lead</a> about <a href="http://vagrantup.com">Vagrant</a> and man is it awesome. Trying to get wealthbot.io to run on OSX using the traditional approach: a combination of MAMP, plus MongoDB and making sure my PHP was up to date and my hosts file was setup correctly, etc, etc &#8230; was a nightmare.</p>
 
 <p>Once I downloaded Vagrant and Virtual Box though, it was a breeze. <code>vagrant up</code> and we&#8217;re off to the races.</p>
 
-<p>I was eternally unhappy with my Wordpress environment, so I began to wonder if there was a Vagrant solution. Lo and behold, VVV.</p>
+<h3 id="backtowordpress">Back to Wordpress</h3>
+
+<p>I&#8217;ve been eternally unhappy with my Wordpress environment, so I began to wonder if there was a Vagrant solution. Lo and behold, <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">VVV</a>.</p>
 
 <p>As long as you have enough space, and have Vargrant + Virtual Box installed, you can download VVV, run <code>vagrant up</code> and a brand new wordpress environment is running on a virtual server inside your machine!</p>
 
-<h2 id="codekit">Codekit</h2>
+<h3 id="codekit">Codekit</h3>
 
-<p>As I mentioned, I&#8217;m using a SASS version of <code>_s</code> for this project, which means I need a way of &#8220;watching&#8221; and compiling in CSS. </p>
+<p>As I mentioned, I&#8217;m using a SASS version of <code>_s</code> for this project, which means I need a way of &#8220;watching&#8221; and compiling my SASS to CSS. </p>
 
-<p>Not everything was easy-breezy thought, I had a hell of a time trying to get ?Grunt? to work with VVV. Eventually I decided that was going to be a challenge for another project. Codekit to the rescue. Pop my theme folder inCodekit, take a guess at a few settings and BAM, automatic SASS AND automatic browser reloading! On multiple devices! </p>
+<p>Not everything was easy-breezy thought, I had a hell of a time trying to get <a href="http://gulpjs.com/">gulp</a> to work. Eventually I decided that was going to be a challenge for another project. <a href="https://incident57.com/codekit/">Codekit</a> to the rescue. Drag my theme folder into Codekit and BAM, automatic SASS AND automatic browser reloading! On multiple devices! </p>
 
 <p>[insert picture on 3 devices]</p>
 
@@ -44,7 +51,7 @@
 
 <p>OK, so I&#8217;ve pushed, prodded and hacked away at this theme and I&#8217;m really digging how Vicky&#8217;s site came out. It&#8217;s simple, picture forward and (in my opinion) has just the right touch of animation to make for an interesting presentation. </p>
 
-<p>About halfway through working on this project, I got the idea to share the theme, help others setup clean, simple Wordpress portfolio sites. And at the same time, hopefully, get some help cleaning up my SASS. </p>
+<p>About halfway through working on this project, I got the idea to share the theme to help others setup clean, simple Wordpress portfolio sites. And at the same time, hopefully, get some help cleaning up my SASS. </p>
 
 <p>This area is where I think the theme needs the most help. I did what I could, but I feel like I didn&#8217;t take full advantage of the syntax, variables and other awesome Sassy features.</p>
 
@@ -52,11 +59,85 @@
 
 <h2 id="structure">Structure</h2>
 
-<p>Let&#8217;s start from the top. First things first, I updated the variables in <code>sass/variables-site/</code> to use the colors and fonts that I thought would appeal to Vicky. </p>
+<p>The structure of the site goes something like this:</p>
 
-<p>I ended up playing with these quite a bit and end up using mainly whites and grays based on the advice of this post. Then I added a splash of color with <code>$color__background-body: #99CCCC;</code> figuring between that and the color rich photography, there was no need to get fancy. </p>
+<p>Header and menu</p>
 
-<p>Next I started hacking away at header.php and style.scss to head the header looking the way I wanted to. </p>
+<figure>
+<img src="/pics-for-readme/menu.png" alt="menu" />
+<figcaption>menu</figcaption>
+</figure>
+
+<p>&#8212;&#8212;&#8212;-&gt;&gt;&gt;&gt;</p>
+
+<p>Featured Image &amp; Title
+<img src="/pics-for-readme/featured-image-and-title.png" alt="Featured Image" /></p>
+
+<p>&#8212;&#8212;&#8212;-&gt;&gt;&gt;&gt;</p>
+
+<p>Post &amp; Gallery</p>
+
+<figure>
+<img src="/pics-for-readme/post-and-gallery.png" alt="post" />
+<figcaption>post</figcaption>
+</figure>
+
+<p>Let&#8217;s start from the top. </p>
+
+<h3 id="variables">Variables</h3>
+
+<p>First things first, I updated the variables in <code>sass/variables-site/</code> to use the colors and fonts that I thought would appeal to Vicky. </p>
+
+<p>I played with these quite a bit at first, but end up using mainly whites and grays based on the advice of <a href="https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda">this post</a>. Then I added a splash of color with <code>$color__background-body: #99CCCC;</code> figuring between that and the color rich photography, there was no need to get fancy. </p>
+
+<h3 id="headerandfooter">Header and Footer</h3>
+
+<p>Next, I started hacking away at header.php and style.scss to get the header looking the way I wanted to.</p>
+
+<p>I didn&#8217;t like the way the custom_header functionality was implemented, plus I only wanted to use the header image on the home page, so I added </p>
+
+<p><code>&lt;?php if (is_front_page()) echo &quot;home-background&quot;;?&gt;</code></p>
+
+<p>to the <code>&lt;header&gt;</code> class and styled <code>.home-background</code> in style.scss. Was this the right way to do things? No idea, but it works for me.</p>
+
+<p>Similar approach with footer.php, but I use the same footer across the whole site, so no need to get as fancy. </p>
+
+<p>By the way, header, footer, background and logo images (there&#8217;s right, I have 2 logos) are in brilliant/inc and titled: </p>
+
+<ul>
+<li>headerbg.png</li>
+<li>footerbg.png</li>
+<li>bg.png</li>
+<li>logo.png and minilogo.png</li>
+</ul>
+
+<h3 id="layout">Layout</h3>
+
+<p>I don&#8217;t like <a href="http://blog.videofruit.com/website-sidebar/">sidebars</a>, both from a design perspective and from a conversion perspective. Not that this theme is built for conversions or anything.</p>
+
+<p>So, I created brilliant/sass/layout/_content-nosidebar.scss to get <em>really</em> content focused.</p>
+
+<h3 id="homemenu">Home Menu</h3>
+
+<p>The idea here again, was to give it a little bit of style, animation and keep it clean.</p>
+
+<p>At first I styled the menu in style.scss, but decided to move everything to sass/navigation/_menus.scss. </p>
+
+<h3 id="homepagescrolling">Home Page Scrolling</h3>
+
+<p>I&#8217;m using the home menu to scroll down the page, not to navigate to other pages. So I created js/brilliant.js and added <a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">this code from CSS Tricks</a>.</p>
+
+<h3 id="featuredimages">Featured Images</h3>
+
+<p>The images on the home page are the featured images for each new blog post you create. You can have as many new &#8220;categories&#8221; on the home page as blog posts. This could get pretty stupid if you&#8217;re writing a lot of new posts, but the idea for this theme was less about content and more about making it easy to setup a few portfolio categories.</p>
+
+<p>So, each post is a new category, each menu link anchors to the post title and I use a <a href="http://jetpack.me/support/tiled-galleries/">Jetpack Tiled Galleries</a> to present the actual photos.</p>
+
+<h3 id="jetpacktiledgalleries">Jetpack Tiled Galleries</h3>
+
+<blockquote>
+<p>With Tiled Galleries you can display your image galleries in three new styles: a rectangular mosaic, a square mosaic, and a circular grid. The rectangular and square tiled layouts also have hover-over captions to save space while making captions accessible.</p>
+</blockquote>
 
 <h2 id="gettingyourownstartertheme">Getting your own starter theme</h2>
 
